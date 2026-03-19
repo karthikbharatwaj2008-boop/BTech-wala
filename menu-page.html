@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - BTech Wala Tiffin Center</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <i class="fas fa-utensils"></i> BTech Wala
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu-page.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-order ms-2 position-relative" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span id="cart-badge"
+                                style="position: absolute; top: -5px; right: -5px; background: var(--primary-orange); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold;"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header py-5"
+        style="background: linear-gradient(135deg, #1a1a1a 0%, #111 100%); min-height: 200px; display: flex; align-items: center;">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3"
+                style="background: linear-gradient(45deg, #ff3c00, #ff9800); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                Our Complete Menu</h1>
+            <p class="lead" style="color: #ccc;">Discover all our delicious dishes</p>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/idli.avif" alt="Idli" class="menu-img">
+                            <div class="price-badge">₹30</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Idli</h5>
+                            <p>Soft and fluffy steamed rice cakes</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(1, 'Idli', 30)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/Cheese-Dosa-recipe.jpg" alt="Dosa" class="menu-img">
+                            <div class="price-badge">₹40</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Cheese Dosa</h5>
+                            <p>Crispy crepe with cheese filling</p>
+                            <button class="btn btn-sm btn-order-now"
+                                onclick="addToCartFromMenu(2, 'Cheese Dosa', 40)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/masala dosa.jpg" alt="Masala Dosa" class="menu-img">
+                            <div class="price-badge">₹60</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Masala Dosa</h5>
+                            <p>Crispy dosa with spiced potato</p>
+                            <button class="btn btn-sm btn-order-now"
+                                onclick="addToCartFromMenu(3, 'Masala Dosa', 60)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/Upma.jpg" alt="Upma" class="menu-img">
+                            <div class="price-badge">₹35</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Upma</h5>
+                            <p>Savory semolina porridge</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(4, 'Upma', 35)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/pongal.jpg" alt="Pongal" class="menu-img">
+                            <div class="price-badge">₹50</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Pongal</h5>
+                            <p>Rice and lentil comfort food</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(5, 'Pongal', 50)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/Parantha.jpg" alt="Parantha" class="menu-img">
+                            <div class="price-badge">₹40</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Parantha</h5>
+                            <p>Flaky Indian flatbread</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(6, 'Parantha', 40)">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/poori.jpg" alt="Poori" class="menu-img">
+                            <div class="price-badge">₹45</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Poori</h5>
+                            <p>Deep-fried Indian bread</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(7, 'Poori', 45)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/vada.jpg" alt="Vada" class="menu-img">
+                            <div class="price-badge">₹30</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Vada</h5>
+                            <p>Crispy lentil fritters</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(8, 'Vada', 30)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/uttapam.jpg" alt="Uttapam" class="menu-img">
+                            <div class="price-badge">₹55</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Uttapam</h5>
+                            <p>Thick pancake with toppings</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(9, 'Uttapam', 55)">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/bread omelette.jpg" alt="Bread Omelette" class="menu-img">
+                            <div class="price-badge">₹50</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Bread Omelette</h5>
+                            <p>Cheese and vegetable omelette</p>
+                            <button class="btn btn-sm btn-order-now"
+                                onclick="addToCartFromMenu(10, 'Bread Omelette', 50)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/poha.jpg" alt="Poha" class="menu-img">
+                            <div class="price-badge">₹30</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Poha</h5>
+                            <p>Flattened rice breakfast</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(11, 'Poha', 30)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/chole.jpg" alt="Chole Bhature" class="menu-img">
+                            <div class="price-badge">₹80</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Chole Bhature</h5>
+                            <p>Chickpea curry with fried bread</p>
+                            <button class="btn btn-sm btn-order-now"
+                                onclick="addToCartFromMenu(12, 'Chole Bhature', 80)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/samosa.webp" alt="Samosa" class="menu-img">
+                            <div class="price-badge">₹25</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Samosa</h5>
+                            <p>Crispy pastry with potato filling</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(13, 'Samosa', 25)">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/pakodas.jpg" alt="Pakodas" class="menu-img">
+                            <div class="price-badge">₹40</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Pakodas</h5>
+                            <p>Vegetable fritters with chutney</p>
+                            <button class="btn btn-sm btn-order-now" onclick="addToCartFromMenu(14, 'Pakodas', 40)">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/chicken-biryani.jpg" alt="Chicken Biryani" class="menu-img">
+                            <div class="price-badge">₹120</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Chicken Biryani</h5>
+                            <p>Fragrant rice and chicken</p>
+                            <button class="btn btn-sm btn-order-now"
+                                onclick="addToCartFromMenu(15, 'Chicken Biryani', 120)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/Southindian thali.webp" alt="South Indian Thali" class="menu-img">
+                            <div class="price-badge">₹150</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>South Indian Thali</h5>
+                            <p>Complete meal with variety</p>
+                            <button class="btn btn-sm btn-order-now"
+                                onclick="addToCartFromMenu(16, 'South Indian Thali', 150)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">BTech Wala</h6>
+                    <p>Serving fresh, affordable food to every BTech student since 2022.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menu-page.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2024 BTech Wala Tiffin Center. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cart JS -->
+    <script src="cart.js"></script>
+
+    <!-- Menu Page JS -->
+    <script>
+        function addToCartFromMenu(id, name, price) {
+            const product = {
+                id: id,
+                name: name,
+                price: price,
+                quantity: 1
+            };
+
+            cart.addItem(product);
+            updateCartBadge();
+
+            // Show feedback
+            const btn = event.target;
+            const originalText = btn.textContent;
+            btn.textContent = '✓ Added!';
+            btn.style.background = 'var(--secondary-orange)';
+
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+            }, 1500);
+
+            // Optional: Show a toast-like notification
+            showAddToCartNotification(name);
+        }
+
+        function showAddToCartNotification(itemName) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: var(--secondary-orange);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 4px;
+                box-shadow: 0 4px 12px rgba(255, 60, 0, 0.3);
+                z-index: 9999;
+                animation: slideIn 0.3s ease;
+                font-weight: 600;
+            `;
+            notification.textContent = `✓ "${itemName}" added to cart!`;
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 2000);
+        }
+
+        // Add animation styles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOut {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTech Wala Tiffin Center - Home</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <i class="fas fa-utensils"></i> BTech Wala
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu-page.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-order ms-2 position-relative" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span id="cart-badge"
+                                style="position: absolute; top: -5px; right: -5px; background: var(--primary-orange); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold;"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="hero-content text-center">
+                <h1 class="display-3 fw-bold mb-3">BTech Wala Tiffin Center</h1>
+                <p class="lead mb-4">Delicious, Affordable, Home-cooked Food For Every BTech Student</p>
+                <p class="tagline mb-5">Fresh ingredients • Fast delivery • Student-friendly prices</p>
+                <a href="menu-page.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-cart"></i> Order Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h5>Fresh Food</h5>
+                        <p>Made with fresh ingredients daily</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h5>Affordable</h5>
+                        <p>Budget-friendly prices for students</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h5>Fast Delivery</h5>
+                        <p>Quick delivery to your hostel</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h5>Homemade Taste</h5>
+                        <p>Like home-cooked meals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK MENU PREVIEW -->
+    <section class="menu-preview-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Popular Favorites</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/idli.avif" alt="Idli" class="menu-img">
+                            <div class="price-badge">₹30</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Idli</h5>
+                            <p>Soft and fluffy steamed rice cakes</p>
+                            <button class="btn btn-sm btn-order-now">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/Cheese-Dosa-recipe.jpg" alt="Dosa" class="menu-img">
+                            <div class="price-badge">₹40</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Cheese Dosa</h5>
+                            <p>Crispy crepe with cheese filling</p>
+                            <button class="btn btn-sm btn-order-now">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="./images/masala dosa.jpg" alt="Masala Dosa" class="menu-img">
+                            <div class="price-badge">₹60</div>
+                        </div>
+                        <div class="menu-content">
+                            <h5>Masala Dosa</h5>
+                            <p>Crispy dosa with spiced potato</p>
+                            <button class="btn btn-sm btn-order-now">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="menu-page.html" class="btn btn-lg btn-outline-primary">
+                    <i class="fas fa-list"></i> View Full Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">BTech Wala</h6>
+                    <p>Serving fresh, affordable food to every BTech student since 2022.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menu-page.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2024 BTech Wala Tiffin Center. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        // Add to Cart button functionality
+        document.querySelect
+
+
+        orAll('.btn-order-now').forEach(btn => {
+            btn.addEventListener('click', function () {
+                alert('Added to cart! Visit our menu page to checkout.');
+            });
+        });
+    </script>
+</body>
+
+</html>
